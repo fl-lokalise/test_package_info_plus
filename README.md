@@ -65,4 +65,25 @@ I/flutter (13256): buildNumber: 4
 
 ### Linux
 
+
 ### Windows
+
+```
+Launching lib\main.dart on Windows in debug mode...
+lib\main.dart:1
+Connecting to VM Service at ws://127.0.0.1:33238/Gh9UXXAGuYM=/ws
+flutter: appName: test_package_info_plus
+flutter: packageName: test_package_info_plus
+flutter: version: 1.2.3
+flutter: buildNumber: 4
+```
+
+### Edge
+
+```
+Flutter Web Bootstrap: Programmatic
+appName: test_package_info_plus
+packageName: test_package_info_plus
+version: 1.2.3
+buildNumber: 4
+```

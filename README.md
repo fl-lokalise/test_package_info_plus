@@ -2,15 +2,67 @@
 
 Project to validate behaviour of package_info_plus
 
-## Getting Started
+## Testing
 
-This project is a starting point for a Flutter application.
+Please open the project and run it on desired platform.
 
-A few resources to get you started if this is your first Flutter project:
+You should see results in two places.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 1. Logs
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Example from `macOS` platform
+```
+flutter: appName: test_package_info_plus
+flutter: packageName: com.example.testPackageInfoPlus
+flutter: version: 1.2.3
+flutter: buildNumber: 4
+```
+
+### 2. UI
+
+It should display the values as logs.
+
+
+## Results
+
+
+### macOS
+
+```
+flutter: appName: test_package_info_plus
+flutter: packageName: com.example.testPackageInfoPlus
+flutter: version: 1.2.3
+flutter: buildNumber: 4
+```
+
+
+### Chrome (web)
+
+```
+appName: test_package_info_plus
+packageName: test_package_info_plus
+version: 1.2.3
+buildNumber: 4
+```
+
+### iOS
+
+```
+flutter: appName: Test Package Info Plus
+flutter: packageName: com.example.testPackageInfoPlus
+flutter: version: 1.2.3
+flutter: buildNumber: 4
+```
+
+### Android
+
+```
+I/flutter (13256): appName: test_package_info_plus
+I/flutter (13256): packageName: com.example.test_package_info_plus
+I/flutter (13256): version: 1.2.3
+I/flutter (13256): buildNumber: 4
+```
+
+### Linux
+
+### Windows

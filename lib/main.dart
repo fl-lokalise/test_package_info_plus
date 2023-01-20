@@ -1,6 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
-void main() {
+String appName = "not set";
+String packageName = "not set";
+String version = "not set";
+String buildNumber = "not set";
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  PackageInfo packageInfo = await PackageInfo.fromPlatform();
+
+  appName = packageInfo.appName;
+  packageName = packageInfo.packageName;
+  version = packageInfo.version;
+  buildNumber = packageInfo.buildNumber;
+
+  print("appName: ${appName}");
+  print("packageName: ${packageName}");
+  print("version: ${version}");
+  print("buildNumber: ${buildNumber}");
+
   runApp(const MyApp());
 }
 
@@ -102,6 +121,11 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            const Text("\nThis section tests package_info_plus"),
+            Text("appName: ${appName}"),
+            Text("packageName: ${packageName}"),
+            Text("version: ${version}"),
+            Text("buildNumber: ${buildNumber}"),
           ],
         ),
       ),
